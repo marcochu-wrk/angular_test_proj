@@ -1,0 +1,7 @@
+<router-outlet />
+<h1 [innerHtml]="title"></h1>
+<img [src]="imgSrc" />
+<input [(ngModel)] = "favouriteAnimal" />
+<p>{{ favouriteAnimal }}</p>
+<input type="text" #pokemonName />
+<button (click)="handleClick(pokemonName.value)">Click Me</button>
